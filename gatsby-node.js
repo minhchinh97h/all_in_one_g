@@ -19,6 +19,7 @@ exports.onCreateWebpackConfig = ({ actions }) => {
         "@images": path.resolve(__dirname, "src/images"),
         "@pages": path.resolve(__dirname, "src/pages"),
         "@i18n": path.resolve(__dirname, "src/i18n"),
+        "@theme": path.resolve(__dirname, "src/theme")
       },
     },
   })

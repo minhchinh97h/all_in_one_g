@@ -1,4 +1,4 @@
-import { FONTS } from "@styles/"
+import { FONTS } from "~styles/"
 import React from "react"
 import styled from "styled-components"
 

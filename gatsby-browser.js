@@ -7,11 +7,12 @@
 // You can delete this file if you're not using it
 
 import "./style.css"
+import Wrapper from "./wrapper"
 import Amplify from "aws-amplify"
 import awsExports from "./src/aws-exports"
 
-export default {
-  onClientEntry: () => {
-    Amplify.configure(awsExports)
-  }
+export const onClientEntry = () => {
+  Amplify.configure(awsExports)
 }
+
+export const wrapRootElement = Wrapper

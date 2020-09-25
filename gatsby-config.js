@@ -31,6 +31,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {}
+    },
+    {
+      resolve: `gatsby-plugin-react-i18next`,
+      options: {
+        path: `${__dirname}/src/locales`,
+        languages: [`en`],
+        defaultLanguage: `en`
+      }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

@@ -8,6 +8,4 @@
 
 import Wrapper from "./wrapper"
 
-export default {
-  wrapRootElement: Wrapper
-}
+export const wrapRootElement = Wrapper

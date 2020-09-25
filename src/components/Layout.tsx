@@ -1,16 +1,20 @@
-import { theme } from "@styles/"
+import { theme } from "~styles/"
 import React from "react"
 import styled, { ThemeProvider } from "styled-components"
-import { ThemeProps } from "types/styles"
+import { ThemeProps } from "~types/styles-types"
 import Header from "./header/Header"
+import { useSelector } from "react-redux"
+import { getTheme } from "~selectors/theme-selections"
 
 interface Props {
   children: React.ReactNode
 }
 
 const Layout = ({ children }: Props) => {
+  const currentTheme = useSelector(getTheme)
+  console.log("currentTheme", currentTheme)
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={theme[currentTheme]}>
       <Container>
         <Header />
         {children}
@@ -21,8 +25,8 @@ const Layout = ({ children }: Props) => {
 
 export default Layout
 
-const Container = styled.div`
-  background-color: ${(props: ThemeProps) => props.theme.DARK.PRIMARY_COLOR};
+const Container = styled.div<ThemeProps>`
+  background-color: ${(props: ThemeProps) => props.theme.PRIMARY_COLOR};
   width: 100vw;
   height: 100vh;
 `

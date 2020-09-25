@@ -1,14 +1,13 @@
-import { withTrans } from "@i18n/withTrans"
 import React from "react"
 import { Provider } from "react-redux"
 import store from "./src/store"
 
 interface Props {
-  children: React.ReactNode
+  element: React.ReactNode
 }
 
-const Wrapper = ({ children }: Props) => {
-  return <Provider store={store}>{children}</Provider>
+const Wrapper = ({ element }: Props) => {
+  return <Provider store={store}>{element}</Provider>
 }
 
-export default withTrans(Wrapper)
+export default Wrapper

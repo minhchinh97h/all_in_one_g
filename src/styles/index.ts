@@ -20,9 +20,7 @@ export const theme = {
     TEXT_SECONDARY_COLOR: "#FFFFFF",
     BUTTON_PRIMARY_COLOR: COLORS.hotPink
   },
-  LIGHT: {
-    
-  }
+  LIGHT: {}
 }
 
 export const TEXTS = {}

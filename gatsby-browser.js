@@ -6,5 +6,12 @@
 
 // You can delete this file if you're not using it
 
-import wrapRootElement from "./wrapper"
-export default wrapRootElement
+import "./style.css"
+import Amplify from "aws-amplify"
+import awsExports from "./src/aws-exports"
+
+export default {
+  onClientEntry: () => {
+    Amplify.configure(awsExports)
+  }
+}

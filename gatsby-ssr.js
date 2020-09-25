@@ -6,5 +6,8 @@
 
 // You can delete this file if you're not using it
 
-import wrapRootElement from "./wrapper"
-export default wrapRootElement
+import Wrapper from "./wrapper"
+
+export default {
+  wrapRootElement: Wrapper
+}

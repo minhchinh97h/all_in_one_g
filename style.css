@@ -1,3 +1,29 @@
+@font-face {
+  font-family: "Courier Prime Regular";
+  src: url("./src/fonts/courierprime-regular-webfont.woff");
+  src: url("./src/fonts/courierprime-regular-webfont.woff2");
+}
+
+@font-face {
+  font-family: "Courier Prime Italic";
+  src: url("./src/fonts/courierprime-italic-webfont.woff");
+  src: url("./src/fonts/courierprime-italic-webfont.woff2");
+}
+
+@font-face {
+  font-family: "Courier Prime Bold";
+  src: url("./src/fonts/courierprime-bold-webfont.woff");
+  src: url("./src/fonts/courierprime-bold-webfont.woff2");
+}
+
+
+@font-face {
+  font-family: "Courier Prime Bold Italic";
+  src: url("./src/fonts/courierprime-bolditalic-webfont.woff");
+  src: url("./src/fonts/courierprime-bolditalic-webfont.woff2");
+}
+
+
 body {
   margin: 0;
   padding: 0;

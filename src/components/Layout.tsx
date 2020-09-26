@@ -12,7 +12,7 @@ interface Props {
 
 const Layout = ({ children }: Props) => {
   const currentTheme = useSelector(getTheme)
-  console.log("currentTheme", currentTheme)
+  
   return (
     <ThemeProvider theme={theme[currentTheme]}>
       <Container>

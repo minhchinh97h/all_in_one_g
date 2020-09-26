@@ -37,7 +37,8 @@ module.exports = {
       options: {
         path: `${__dirname}/src/locales`,
         languages: [`en`],
-        defaultLanguage: `en`
+        defaultLanguage: `en`,
+        i18nextOptions: {}
       }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality

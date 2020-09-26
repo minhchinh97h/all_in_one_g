@@ -1,11 +1,12 @@
 import { FONTS } from "~styles/"
 import React from "react"
 import styled from "styled-components"
+import { translate } from "~helpers/i18next-helper"
 
 const Logo = () => {
   return (
     <Container>
-      <SomeWeirdText>Logo</SomeWeirdText>
+      <SomeWeirdText>{translate("HELLO")}</SomeWeirdText>
     </Container>
   )
 }

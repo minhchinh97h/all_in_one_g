@@ -14,7 +14,7 @@ export const createFirstType = /* GraphQL */ `
       rating
     }
   }
-`;
+`
 export const updateFirstType = /* GraphQL */ `
   mutation UpdateFirstType(
     $input: UpdateFirstTypeInput!
@@ -28,7 +28,7 @@ export const updateFirstType = /* GraphQL */ `
       rating
     }
   }
-`;
+`
 export const deleteFirstType = /* GraphQL */ `
   mutation DeleteFirstType(
     $input: DeleteFirstTypeInput!
@@ -42,4 +42,4 @@ export const deleteFirstType = /* GraphQL */ `
       rating
     }
   }
-`;
+`

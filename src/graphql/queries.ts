@@ -11,7 +11,7 @@ export const getFirstType = /* GraphQL */ `
       rating
     }
   }
-`;
+`
 export const listFirstTypes = /* GraphQL */ `
   query ListFirstTypes(
     $filter: ModelFirstTypeFilterInput
@@ -29,4 +29,4 @@ export const listFirstTypes = /* GraphQL */ `
       nextToken
     }
   }
-`;
+`

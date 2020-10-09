@@ -1,4 +1,4 @@
-import { RootReducerType } from "./root-reducer-types"
+import { RootReducerType } from './root-reducer-types'
 
 export interface ReduxAction {
   type: string

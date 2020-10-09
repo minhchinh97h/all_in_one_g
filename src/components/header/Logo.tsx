@@ -1,12 +1,12 @@
-import { FONTS } from "~styles/"
-import React from "react"
-import styled from "styled-components"
-import { translate } from "~helpers/i18next-helper"
+import { FONTS } from '~styles/'
+import React from 'react'
+import styled from 'styled-components'
+import { translate } from '~helpers/i18next-helper'
 
 const Logo = () => {
   return (
     <Container>
-      <SomeWeirdText>{translate("HELLO")}</SomeWeirdText>
+      <LogoHolder>{translate('LOGO_HOLDER')}</LogoHolder>
     </Container>
   )
 }
@@ -15,6 +15,6 @@ export default Logo
 
 const Container = styled.div``
 
-const SomeWeirdText = styled.p`
+const LogoHolder = styled.p`
   font-family: ${FONTS.REGULAR};
 `

@@ -11,7 +11,7 @@ export const onCreateFirstType = /* GraphQL */ `
       rating
     }
   }
-`;
+`
 export const onUpdateFirstType = /* GraphQL */ `
   subscription OnUpdateFirstType {
     onUpdateFirstType {
@@ -22,7 +22,7 @@ export const onUpdateFirstType = /* GraphQL */ `
       rating
     }
   }
-`;
+`
 export const onDeleteFirstType = /* GraphQL */ `
   subscription OnDeleteFirstType {
     onDeleteFirstType {
@@ -33,4 +33,4 @@ export const onDeleteFirstType = /* GraphQL */ `
       rating
     }
   }
-`;
+`

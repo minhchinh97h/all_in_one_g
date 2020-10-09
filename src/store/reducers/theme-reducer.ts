@@ -1,12 +1,15 @@
-import { SWITCH_THEME } from "~actions/theme-actions"
-import { ReduxAction } from "~types/redux-types"
-import { ThemeEnums, ThemeReducer } from "~types/theme-types"
+import { SWITCH_THEME } from '~actions/theme-actions'
+import { ReduxAction } from '~types/redux-types'
+import { ThemeEnums, ThemeReducer } from '~types/theme-types'
 
 const initialState: ThemeReducer = {
   theme: ThemeEnums.DARK
 }
 
-const themeReducer = (state = initialState, action: ReduxAction): ThemeReducer => {
+const themeReducer = (
+  state = initialState,
+  action: ReduxAction
+): ThemeReducer => {
   switch (action.type) {
     case SWITCH_THEME:
       const { theme } = state

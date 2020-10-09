@@ -1,5 +1,5 @@
-import { createSelector } from "reselect"
-import { RootReducerType } from "~types/root-reducer-types"
+import { createSelector } from 'reselect'
+import { RootReducerType } from '~types/root-reducer-types'
 
 const getThemeReducer = (state: RootReducerType) => state.themeReducer
 

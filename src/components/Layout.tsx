@@ -1,10 +1,10 @@
-import { theme } from "~styles/"
-import React from "react"
-import styled, { ThemeProvider } from "styled-components"
-import { ThemeProps } from "~types/styles-types"
-import Header from "./header/Header"
-import { useSelector } from "react-redux"
-import { getTheme } from "~selectors/theme-selections"
+import { theme } from '~styles/'
+import React from 'react'
+import styled, { ThemeProvider } from 'styled-components'
+import { ThemeProps } from '~types/styles-types'
+import Header from './header/Header'
+import { useSelector } from 'react-redux'
+import { getTheme } from '~selectors/theme-selections'
 
 interface Props {
   children: React.ReactNode
@@ -12,7 +12,7 @@ interface Props {
 
 const Layout = ({ children }: Props) => {
   const currentTheme = useSelector(getTheme)
-  
+
   return (
     <ThemeProvider theme={theme[currentTheme]}>
       <Container>

@@ -3,6 +3,6 @@ export interface ThemeReducer {
 }
 
 export enum ThemeEnums {
-  DARK = "DARK",
-  LIGHT = "LIGHT"
+  DARK = 'DARK',
+  LIGHT = 'LIGHT'
 }
